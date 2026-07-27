@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5bc2cc6-0a9a-4b07-a34d-31975c260c47" name="Changes" comment="Generated main. added requirements.txt file">
-      <change afterPath="$PROJECT_DIR$/BankClass.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AccountClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/AccountClass.py" afterDir="false" />
+    <list default="true" id="c5bc2cc6-0a9a-4b07-a34d-31975c260c47" name="Changes" comment="Added banking class, added repr func for AccountClass.py">
+      <change beforePath="$PROJECT_DIR$/BankClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/BankClass.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Welcome.py" beforeDir="false" afterPath="$PROJECT_DIR$/Welcome.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +99,15 @@
       <option name="project" value="LOCAL" />
       <updated>1785162334901</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added banking class, added repr func for AccountClass.py">
+      <option name="closed" value="true" />
+      <created>1785162829347</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1785162829347</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -119,6 +126,7 @@
     <MESSAGE value="Added basic class details" />
     <MESSAGE value="Add basic class validations" />
     <MESSAGE value="Generated main. added requirements.txt file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Generated main. added requirements.txt file" />
+    <MESSAGE value="Added banking class, added repr func for AccountClass.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added banking class, added repr func for AccountClass.py" />
   </component>
 </project>

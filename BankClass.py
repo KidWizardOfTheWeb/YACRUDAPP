@@ -1,5 +1,6 @@
 import uuid
 
+# THIS IS OUR MAIN CLASS
 class Bank:
     # All accounts, key = UUID, value = account obj
     account_dict = dict
