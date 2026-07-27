@@ -1,47 +1,100 @@
 import uuid
 
-class Account():
+
+class Account:
     # Constructor
     def __init__(self, first_name, last_name, phone_num, email):
-        # Validate name must be 3 char minimum, must be a string
-        while len(first_name) < 3 or not isinstance(first_name, str):
-            self.first_name = str(input("First name not valid, please enter a 3 letter name:"))
-        self.first_name = first_name
 
-        while len(last_name) < 3 or not isinstance(first_name, str):
-            self.last_name = str(input("Last name not valid, please enter a 3 letter name:"))
-        self.last_name = last_name
+        # Validate and store customer information
+        self.first_name = self.validate_name(first_name, "First")
+        self.last_name = self.validate_name(last_name, "Last")
 
-        # Generated UUID on init, cannot modify.
-        #
+        # Generated UUID on init, cannot modify
         self.id = str(uuid.uuid4())
 
-        # Phone num must be 10 digits, valid phone number
-        self.phone_num = phone_num
+        # Validate and store contact information
+        self.phone_num = self.validate_phone(phone_num)
+        self.email = self.validate_email(email)
 
-        # Valid email ends with @ and the platform (@gmail, @hotmail, etc).
-        self.email = email
-
-        # Always init as zero.
+        # Always initialize balance as zero
         self.balance = 0
+
+
+    # Validation Methods
+
+    def validate_name(self, name, name_type):
+
+        while not isinstance(name, str) or len(name) < 3:
+            name = input(
+                f"{name_type} name not valid, please enter a 3+ letter name: "
+            )
+
+        return name
+
+
+    def validate_phone(self, phone_num):
+
+        while len(str(phone_num)) != 10 or not str(phone_num).isdigit():
+            phone_num = input(
+                "Phone number not valid, please enter a 10 digit number: "
+            )
+
+        return str(phone_num)
+
+
+    def validate_email(self, email):
+
+        while "@" not in email or "." not in email:
+            email = input(
+                "Email not valid, please enter a valid email: "
+            )
+
+        return email
+
+
+    # Account Methods
 
     def update_balance(self, new_balance):
         self.balance = new_balance
 
-    """
-    1. Phone num check (must be 10 digits)
-    2. Name
-    """
 
-    # Dunder method for printing user data as representation
+    def update_account(
+        self,
+        first_name=None,
+        last_name=None,
+        phone_num=None,
+        email=None
+    ):
+
+        if first_name is not None:
+            self.first_name = self.validate_name(
+                first_name,
+                "First"
+            )
+
+        if last_name is not None:
+            self.last_name = self.validate_name(
+                last_name,
+                "Last"
+            )
+
+        if phone_num is not None:
+            self.phone_num = self.validate_phone(phone_num)
+
+        if email is not None:
+            self.email = self.validate_email(email)
+
+
+
+    #Call this to get a string representation of the account
     def __repr__(self):
+
         return (
             f"Account("
-            f"id='{self._id}', "
+            f"id='{self.id}', "
             f"name='{self.first_name} {self.last_name}', "
             f"phone='{self.phone_num}', "
             f"email='{self.email}', "
             f"balance=${self.balance:.2f}"
             f")"
         )
-    pass
