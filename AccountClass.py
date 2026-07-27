@@ -3,7 +3,6 @@ import uuid
 class Account():
     # Constructor
     def __init__(self, first_name, last_name, phone_num, email):
-
         # Validate name must be 3 char minimum, must be a string
         while len(first_name) < 3 or not isinstance(first_name, str):
             self.first_name = str(input("First name not valid, please enter a 3 letter name:"))
@@ -13,7 +12,9 @@ class Account():
             self.last_name = str(input("Last name not valid, please enter a 3 letter name:"))
         self.last_name = last_name
 
-        self._id = str(uuid.uuid4()) # Generated UUID on init, cannot modify (private)
+        # Generated UUID on init, cannot modify.
+        #
+        self.id = str(uuid.uuid4())
 
         # Phone num must be 10 digits, valid phone number
         self.phone_num = phone_num
@@ -31,4 +32,9 @@ class Account():
     1. Phone num check (must be 10 digits)
     2. Name
     """
+
+    # Dunder method for printing user data as representation
+    def __repr__(self):
+        print(self)
+        pass
     pass
