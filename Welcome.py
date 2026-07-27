@@ -9,7 +9,7 @@ def view_account():
     # If no accounts, print that there are none.
     if bank_inst.account_dict is None:
         print("No accounts to show!")
-        pass
+        return
 
     account_query = str(input("Type the UUID of the account to display, or type ALL to see all accounts:"))
 
@@ -38,6 +38,7 @@ FUNC_LIST = {
 
 # Treat main as menu selector
 if __name__ == "__main__":
+    print("Welcome to the bank managing app.\n")
 
     # Loop until end of time.
     while True:
@@ -47,6 +48,5 @@ if __name__ == "__main__":
         if user_opt in VALID_OPTIONS:
             # Select the matching functions
             FUNC_LIST[user_opt]()
-
             pass
         pass
