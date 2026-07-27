@@ -37,3 +37,9 @@ class Bank:
             matching_accounts.append(account)
 
         return matching_accounts
+    
+    def remove_account(self, account_id):
+        """
+        Remove an account using its UUID.
+        """
+        return self.account_dict.pop(account_id, None)
