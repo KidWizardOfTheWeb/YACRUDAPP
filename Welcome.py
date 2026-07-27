@@ -23,6 +23,21 @@ def view_account():
         print(retrieved_account)
     pass
 
+def remove_account():
+    if not bank_inst.account_dict:
+        print("No accounts available to remove.")
+        return
+
+    account_id = input("Enter the UUID of the account to remove: ").strip()
+
+    removed_account = bank_inst.remove_account(account_id)
+
+    if removed_account is None:
+        print("No account was found with that UUID.")
+    else:
+        print("Account successfully removed:")
+        print(removed_account)
+
 
 OPTION_LIST = ("1. View account\n"
                "2. Update accounts\n"
