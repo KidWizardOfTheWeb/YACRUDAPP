@@ -1,5 +1,7 @@
 import uuid
 
+from AccountClass import Account
+
 # THIS IS OUR MAIN CLASS
 class Bank:
     # All accounts, key = UUID, value = account obj
@@ -7,6 +9,10 @@ class Bank:
 
     # Functions to search for all accounts with X property
     # Filters through users that have a balance based on basic conditionals (greater than, less than, etc)
+    def make_newaccount(self, first_name, last_name, phone_num, email):
+        new_account = Account(first_name, last_name, phone_num, email)
+        self.account_dict[new_account.id] = new_account
+        return new_account
     def find_balance_that_matches(self, condition, balance):
         pass
 

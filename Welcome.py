@@ -23,6 +23,13 @@ def view_account():
         print(retrieved_account)
     pass
 
+def add_account():
+    first_name = str(input("Enter first name:"))
+    last_name = str(input("Enter last name:"))
+    phone_num = str(input("Enter phone number:"))
+    email = str(input("Enter email:"))
+    account = bank_inst.make_newaccount(first_name, last_name, phone_num, email)
+    return account
 
 OPTION_LIST = ("1. View account\n"
                "2. Update accounts\n"
@@ -33,7 +40,8 @@ OPTION_LIST = ("1. View account\n"
 VALID_OPTIONS = [str(x) for x in range(1, 4)]
 
 FUNC_LIST = {
-    "1": view_account
+    "1": view_account,
+    "3": add_account
 }
 
 # Treat main as menu selector
