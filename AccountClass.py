@@ -1,6 +1,5 @@
 import uuid
 
-
 class Account:
     # Constructor
     def __init__(self, first_name, last_name, phone_num, email):
@@ -9,8 +8,9 @@ class Account:
         self.first_name = self.validate_name(first_name, "First")
         self.last_name = self.validate_name(last_name, "Last")
 
-        # Generated UUID on init, cannot modify
-        self.id = str(uuid.uuid4())
+        # Generated UUID on init, cannot modify.
+        # Should be private, as this is used as a key for BankClass.
+        self._id = str(uuid.uuid4())
 
         # Validate and store contact information
         self.phone_num = self.validate_phone(phone_num)
@@ -43,8 +43,7 @@ class Account:
 
 
     def validate_email(self, email):
-
-        while "@" not in email or "." not in email:
+        while "@" not in email and "." not in email:
             email = input(
                 "Email not valid, please enter a valid email: "
             )
@@ -56,7 +55,6 @@ class Account:
 
     def update_balance(self, new_balance):
         self.balance = new_balance
-
 
     def update_account(
         self,
@@ -91,10 +89,15 @@ class Account:
 
         return (
             f"Account("
-            f"id='{self.id}', "
+            f"id='{self._id}', "
             f"name='{self.first_name} {self.last_name}', "
             f"phone='{self.phone_num}', "
             f"email='{self.email}', "
             f"balance=${self.balance:.2f}"
             f")"
         )
+
+
+
+# FOR TESTING
+DUMMY_ACCOUNT = Account("XXX", "YYY", "1234567890", "ABC@gmail.com")

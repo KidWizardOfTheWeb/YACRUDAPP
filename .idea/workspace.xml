@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5bc2cc6-0a9a-4b07-a34d-31975c260c47" name="Changes" comment="Added banking class, added repr func for AccountClass.py">
+    <list default="true" id="c5bc2cc6-0a9a-4b07-a34d-31975c260c47" name="Changes" comment="view_account returns if no accounts found">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AccountClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/AccountClass.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BankClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/BankClass.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Welcome.py" beforeDir="false" afterPath="$PROJECT_DIR$/Welcome.py" afterDir="false" />
     </list>
@@ -23,21 +25,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "KidWizardOfTheWeb"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;KidWizardOfTheWeb&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/KidWizardOfTheWeb/YACRUDAPP",
-    "accountId": "e41e1bc1-57c2-49b6-9fd4-47d33d5490b1"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/KidWizardOfTheWeb/YACRUDAPP&quot;,
+    &quot;accountId&quot;: &quot;e41e1bc1-57c2-49b6-9fd4-47d33d5490b1&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="3H5cnBdxvEVLyOzWEWm7KMlcu8Y" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -46,10 +48,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.BankClass.executor": "Run",
+    "Python.Welcome.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master"
+    "git-widget-placeholder": "master",
+    "settings.editor.selected.configurable": "debugger.dataViews.python.type.renderers"
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -107,7 +112,47 @@
       <option name="project" value="LOCAL" />
       <updated>1785162829347</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Setting up selector for menu">
+      <option name="closed" value="true" />
+      <created>1785163249553</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1785163249553</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added bank instance to main, global">
+      <option name="closed" value="true" />
+      <created>1785163775700</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1785163775700</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added requirements.txt properly this time">
+      <option name="closed" value="true" />
+      <created>1785164477507</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1785164477507</updated>
+    </task>
+    <task id="LOCAL-00009" summary="FUNC_LIST functional, updated view_account further">
+      <option name="closed" value="true" />
+      <created>1785164510771</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1785164510771</updated>
+    </task>
+    <task id="LOCAL-00010" summary="view_account returns if no accounts found">
+      <option name="closed" value="true" />
+      <created>1785164676158</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1785164676158</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,6 +172,67 @@
     <MESSAGE value="Add basic class validations" />
     <MESSAGE value="Generated main. added requirements.txt file" />
     <MESSAGE value="Added banking class, added repr func for AccountClass.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added banking class, added repr func for AccountClass.py" />
+    <MESSAGE value="Setting up selector for menu" />
+    <MESSAGE value="Added bank instance to main, global" />
+    <MESSAGE value="Added requirements.txt properly this time" />
+    <MESSAGE value="FUNC_LIST functional, updated view_account further" />
+    <MESSAGE value="view_account returns if no accounts found" />
+    <option name="LAST_COMMIT_MESSAGE" value="view_account returns if no accounts found" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Welcome.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Welcome.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Welcome.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Welcome.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Welcome.py</url>
+          <line>43</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BankClass.py</url>
+          <line>44</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Welcome.py</url>
+          <line>81</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Welcome.py</url>
+          <line>91</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BankClass.py</url>
+          <line>47</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Welcome.py</url>
+          <line>56</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

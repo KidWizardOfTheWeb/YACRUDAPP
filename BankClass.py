@@ -1,17 +1,17 @@
 import uuid
-
+import AccountClass
 from AccountClass import Account
 
 # THIS IS OUR MAIN CLASS
 class Bank:
     # All accounts, key = UUID, value = account obj
-    account_dict = {}
+    account_dict = dict()
 
     # Functions to search for all accounts with X property
     # Filters through users that have a balance based on basic conditionals (greater than, less than, etc)
     def make_newaccount(self, first_name, last_name, phone_num, email):
         new_account = Account(first_name, last_name, phone_num, email)
-        self.account_dict[new_account.id] = new_account
+        self.account_dict[new_account._id] = new_account
         return new_account
     def find_balance_that_matches(self, condition, balance):
         pass
@@ -43,3 +43,6 @@ class Bank:
         Remove an account using its UUID.
         """
         return self.account_dict.pop(account_id, None)
+
+    def add_dummy_account(self):
+        self.account_dict.update({AccountClass.DUMMY_ACCOUNT._id: AccountClass.DUMMY_ACCOUNT})
