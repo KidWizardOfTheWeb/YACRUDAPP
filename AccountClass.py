@@ -35,6 +35,13 @@ class Account():
 
     # Dunder method for printing user data as representation
     def __repr__(self):
-        print(self)
-        pass
+        return (
+            f"Account("
+            f"id='{self._id}', "
+            f"name='{self.first_name} {self.last_name}', "
+            f"phone='{self.phone_num}', "
+            f"email='{self.email}', "
+            f"balance=${self.balance:.2f}"
+            f")"
+        )
     pass
