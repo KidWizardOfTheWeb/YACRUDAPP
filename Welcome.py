@@ -97,7 +97,8 @@ OPTION_LIST = ("1. View account\n"
                "2. Update accounts\n"
                "3. Add accounts\n"
                "4. Remove accounts\n"
-               "5. Modify account balance\n")
+               "5. Modify account balance\n"
+               "6. Add dummy account\n")
 
 # All valid options for our menu, ranges from 1 to end option
 VALID_OPTIONS = [str(x) for x in range(1, 6)]
@@ -107,7 +108,8 @@ FUNC_LIST = {
     "2": modify_details,
     "3": add_account,
     "4": remove_account,
-    "5": modify_balance
+    "5": modify_balance,
+    "6": bank_inst.add_dummy_account()
 }
 
 # Treat main as menu selector
